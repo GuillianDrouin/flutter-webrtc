@@ -44,7 +44,7 @@ public class DeviceOrientationManager {
   }
 
   public void start() {
-    if (broadcastReceiver != null) {
+    if (broadcastReceiver != null || activity == null) {
       return;
     }
     broadcastReceiver =
